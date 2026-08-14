@@ -1,4 +1,8 @@
-# fedramp-automation usage examples
+# fedramp-automation usage examples - DEPRECATED
+
+**THE EXAMPLES IN THIS FOLDER ARE OBSOLETE AND WILL BE DEPRECATED.**
+
+**NOTE - CONTENT IN THIS FOLDER OR SUBFOLDER IS DEPRECATED. SUBSEQUENT RELEASES WILL NOT INCLUDE THIS CONTENT.**
 
 As a collection of validation rules for FedRAMP OSCAL documents, `fedramp-automation` is intended to be used by FedRAMP reviewers to ensure that the documents meet the requirements of the OSCAL standard with FedRAMP extensions. Additionally, validation rules can be integrated with third-party tools to ensure that documents meet FedRAMP requirements.
 
@@ -12,7 +16,7 @@ Additionally, these examples serve as basic automated tests of the validation su
 
 ## General overview
 
-- The source SSP rules defined in [../validations/rules/ssp.sch](../validations/rules/ssp.sch) are compiled into a single XSLT file, [../validations/target/rules/ssp.sch.xsl](../validations/target/rules/ssp.sch.xsl). Similar artifacts are produced for SAP, SAR, and POA&M rules.
+- The source SSP rules defined in [../validations/rules/ssp.sch](../validations/rules/ssp.sch) are compiled into a single XSLT file, [../validations/target/rules/rev4/ssp.sch.xsl](../validations/target/rules/rev4/ssp.sch.xsl). Similar artifacts are produced for SAP, SAR, and POA&M rules.
 - The compiled XSLT file must be evaluated by an XSLT 3.0 compatible processor. The [Saxon](https://www.saxonica.com/) suite of libraries are the only compatible XSLT 3.0 processors at the time of writing.
   - Java Saxon-HE is open-source and recommended.
   - Javascript Saxon-JS is free, but not open-source. The UI for this project may be referenced as an example.

@@ -1,4 +1,4 @@
-SAXON_VERSION := 10.5
+SAXON_VERSION := 10.8
 SAXON_JAR := Saxon-HE-$(SAXON_VERSION).jar
 SAXON_LOCATION := saxon/Saxon-HE/$(SAXON_VERSION)/$(SAXON_JAR)
 SAXON_URL := https://repo1.maven.org/maven2/net/sf/$(SAXON_LOCATION)
@@ -11,7 +11,7 @@ COMPILE_SCH := bash $(VALIDATIONS_DIR)/bin/compile-sch.sh
 EVAL_SCHEMATRON := bash $(VALIDATIONS_DIR)/bin/evaluate-compiled-schematron.sh
 EVAL_XSPEC := TEST_DIR=$(VALIDATIONS_DIR)/report/test bash vendor/xspec/bin/xspec.sh -e -s -j
 
-OSCAL_SCHEMATRON := $(wildcard $(VALIDATIONS_DIR)/rules/*.sch)
+OSCAL_SCHEMATRON := $(wildcard $(VALIDATIONS_DIR)/rules/**/*.sch)
 STYLEGUIDE_SCHEMATRON := $(wildcard $(VALIDATIONS_DIR)/styleguides/*.sch)
 SRC_SCH := $(OSCAL_SCHEMATRON) $(STYLEGUIDE_SCHEMATRON)
 
